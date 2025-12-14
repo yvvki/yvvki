@@ -1,0 +1,20 @@
+{
+	"name": "yvvki",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"start": "vite start"
+	},
+	"dependencies": {
+		"hono": "^4.11.0",
+		"honox": "^0.1.52"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.8",
+		"@hono/vite-ssg": "^0.3.0",
+		"typescript": "^5.7",
+		"vite": "^7.2.7"
+	}
+}

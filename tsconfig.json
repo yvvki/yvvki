@@ -1,0 +1,9 @@
+{
+	"extends": ["./tsconfig.base.json", "./tsconfig.strict.json"],
+	"compilerOptions": {
+		"skipLibCheck": true,
+
+		"jsx": "react-jsx",
+		"jsxImportSource": "hono/jsx"
+	}
+}
