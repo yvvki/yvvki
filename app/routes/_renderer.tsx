@@ -12,7 +12,7 @@ export default jsxRenderer(({ children }) => {
 
 				<link rel="stylesheet" href="style.css" />
 			</head>
-			<body>{children}</body>
+			<body class="compact">{children}</body>
 		</html>
 	);
 });
