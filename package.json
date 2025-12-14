@@ -3,8 +3,10 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
+		"format": "biome format",
+		"lint": "biome lint",
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && biome format --vcs-use-ignore-file=false --write dist",
 		"start": "vite start"
 	},
 	"dependencies": {

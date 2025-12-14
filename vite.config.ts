@@ -1,9 +1,17 @@
 import ssg from "@hono/vite-ssg";
-import honox from "honox/vite";
+import honox, { devServerDefaultOptions } from "honox/vite";
 import { defineConfig } from "vite";
 
 const entry = "./app/server.ts";
 
 export default defineConfig({
-	plugins: [honox(), ssg({ entry })],
+	plugins: [
+		honox({
+			entry,
+			devServer: {
+				exclude: [...devServerDefaultOptions.exclude, /^\/public\/.+/],
+			},
+		}),
+		ssg({ entry }),
+	],
 });
