@@ -2,6 +2,7 @@
 	"name": "yvvki",
 	"type": "module",
 	"private": true,
+	"license": "MIT",
 	"scripts": {
 		"format": "biome format",
 		"lint": "biome lint",
