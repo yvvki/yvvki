@@ -1,2 +1,6 @@
 # Cache
 node_modules/
+
+# Build
+/build/
+/out/

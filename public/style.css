@@ -1,0 +1,31 @@
+@font-face {
+	font-family: Synth;
+	src: url("/font/Synth.ttf");
+}
+
+:root {
+	font-family: Synth, monospace;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+
+	color: #312;
+	background-color: #fce;
+
+	font-size: 1.2em;
+}
+
+.compact {
+	padding-left: 80px;
+	width: 560px;
+}
+
+@media (max-width: 640px) {
+	.compact {
+		padding-left: inherit;
+		width: 100%;
+	}
+}
