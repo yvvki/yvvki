@@ -30,7 +30,7 @@ jobs:
         with:
           bun-version: latest
       - run: bun ci
-      - run: bun build
+      - run: bun run build
       - uses: actions/upload-artifact@v6
         with:
           name: dist
