@@ -10,14 +10,14 @@ _he/her/Rika_
 🎒🍼
 🌈🍖
 
-[![Discord Presence]](Discord)
+[![Discord Presence]][Discord]
 
-[![Linktree Badge]](Linktree)
+[![Linktree]][Linktree URL]
 
 <!---->
 
 [Discord]: https://discord.com/users/737365310079762564
 [Discord Presence]: https://lanyard.cnrad.dev/api/737365310079762564?showDisplayName=true&animatedDecoration=true
 
-[Linktree]: https://linktr.ee/yvvki
-[Linktree Badge]: https://img.shields.io/badge/Linktree-black?style=flat&logo=linktree&logoColor=black&labelColor=43E55E
+[Linktree URL]: https://linktr.ee/yvvki
+[Linktree]: https://img.shields.io/badge/Linktree-black?style=flat&logo=linktree&logoColor=black&labelColor=43E55E
