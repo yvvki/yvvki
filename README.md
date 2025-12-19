@@ -1,4 +1,7 @@
-<img src="yvvki.svg" width="100%" alt="Yuuki Rika" />
+<img src="yvvki.webp" align="center" width="20%" alt="Profile Picture" style="border-radius: 50%;" />
+<img src="yvvki.svg" align="center" width="60%" alt="Yuuki Rika" />
+<br />
+<br />
 
 結城リカ 🐱🐰🎀🖤
 
