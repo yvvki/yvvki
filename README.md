@@ -1,6 +1,6 @@
 <div>
-	<img src="yvvki.webp" align="center" width="20%" alt="Profile Picture" />
-	<img src="yvvki.svg" align="center" width="60%" alt="Yuuki Rika" />
+	<img src="docs/yvvki.webp" align="center" width="20%" alt="Profile Picture" />
+	<img src="docs/yvvki.svg" align="center" width="60%" alt="Yuuki Rika" />
 </div>
 <br />
 
