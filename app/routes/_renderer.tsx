@@ -1,6 +1,7 @@
+import { Script } from "honox/server";
 import { jsxRenderer } from "hono/jsx-renderer";
 
-export default jsxRenderer(({ children }) => {
+export default jsxRenderer(({ children }, c) => {
 	return (
 		<html lang="en">
 			<head>
@@ -10,7 +11,12 @@ export default jsxRenderer(({ children }) => {
 				<meta name="author" content="Yuuki Rika" />
 				<meta name="description" content="結城理科" />
 
-				<link rel="stylesheet" href="style.css" />
+				<Script
+					src="/app/client.ts"
+					async
+					nonce={c.get("secureHeadersNonce")}
+				/>
+				<link href="/app/style.css" rel="stylesheet" />
 			</head>
 			<body class="compact">{children}</body>
 		</html>
