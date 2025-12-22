@@ -11,13 +11,13 @@
 		"start": "vite start"
 	},
 	"dependencies": {
-		"hono": "^4.11.0",
+		"hono": "^4.11.1",
 		"honox": "^0.1.52"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.8",
+		"@biomejs/biome": "^2.3.10",
 		"@hono/vite-ssg": "^0.3.0",
-		"typescript": "^5.7",
-		"vite": "^7.2.7"
+		"typescript": "^5.9.3",
+		"vite": "^7.3.0"
 	}
 }
