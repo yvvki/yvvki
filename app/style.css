@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Bytesized&family=Micro+5&family=Jersey+10&display=swap");
+@import url("/styles/serenityos-emoji.css");
+@import url("/styles/ark-pixel-font-12px-proportional.css");
+
+@import "tailwindcss";
+
+@theme {
+	--font-*: initial;
+	--font-mono: "Bytesized", monospace;
+	--font-sans: "Jersey 10", sans-serif;
+	--font-micro: "Micro 5", sans-serif;
+	--font-ark: "Ark Pixel Font 12px Proportional JP", monospace;
+	--font-emoji: "SerenityOS Emoji", sans-serif;
+}
