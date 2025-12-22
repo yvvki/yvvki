@@ -4,12 +4,21 @@ import ssg from "@hono/vite-ssg";
 
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 const entry = "./app/server.ts";
 const input = ["./app/client.ts", "./app/style.css"];
 
 const clientConfig = defineConfig({
-	plugins: [client({ input }), tailwindcss()],
+	plugins: [
+		client({ input }),
+		tailwindcss({ optimize: { minify: false } }),
+		tsconfigPaths(),
+	],
+	build: {
+		minify: false,
+		cssMinify: false,
+	},
 });
 
 const serverConfig = defineConfig({
@@ -21,7 +30,8 @@ const serverConfig = defineConfig({
 			},
 			client: { input },
 		}),
-		tailwindcss(),
+		tailwindcss({ optimize: { minify: false } }),
+		tsconfigPaths(),
 		ssg({ entry }),
 	],
 	build: {
