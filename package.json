@@ -7,13 +7,15 @@
 		"format": "biome format",
 		"lint": "biome lint",
 		"dev": "vite dev",
-		"build": "vite build && bun run postbuild",
+		"build": "vite build --mode client && vite build && bun run postbuild",
 		"postbuild": "biome format --vcs-use-ignore-file=false --write dist",
 		"start": "vite start"
 	},
 	"dependencies": {
+		"@tailwindcss/vite": "^4.1.18",
 		"hono": "^4.11.1",
-		"honox": "^0.1.52"
+		"honox": "^0.1.52",
+		"tailwindcss": "^4.1.18"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.3.10",
