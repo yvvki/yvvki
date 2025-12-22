@@ -7,7 +7,8 @@
 		"format": "biome format",
 		"lint": "biome lint",
 		"dev": "vite dev",
-		"build": "vite build && biome format --vcs-use-ignore-file=false --write dist",
+		"build": "vite build && bun run postbuild",
+		"postbuild": "biome format --vcs-use-ignore-file=false --write dist",
 		"start": "vite start"
 	},
 	"dependencies": {
