@@ -19,6 +19,7 @@
 	"assist": {
 		"enabled": true,
 		"actions": {
+			"recommended": true,
 			"source": {
 				"organizeImports": {
 					"level": "on",
@@ -37,6 +38,10 @@
 				}
 			}
 		}
+	},
+	"formatter": {
+		"enabled": true,
+		"useEditorconfig": true
 	},
 	"html": {
 		"experimentalFullSupportEnabled": true,
