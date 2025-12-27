@@ -1,7 +1,5 @@
 import { raw } from "hono/html";
 
-import Head from "@/components/profile";
-
 export default function Home() {
 	return (
 		<div class="*:py-1">

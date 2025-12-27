@@ -1,20 +1,23 @@
+import path from "node:path";
+
 import honox, { devServerDefaultOptions } from "honox/vite";
 import client from "honox/vite/client";
 import ssg from "@hono/vite-ssg";
 
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
 
 const entry = "./app/server.ts";
 const input = ["./app/client.ts", "./app/style.css"];
 
 const clientConfig = defineConfig({
-	plugins: [
-		client({ input }),
-		tailwindcss({ optimize: { minify: false } }),
-		tsconfigPaths(),
-	],
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "app/"),
+		},
+		builtins: [/^node:/],
+	},
+	plugins: [client({ input }), tailwindcss({ optimize: { minify: false } })],
 	build: {
 		minify: false,
 		cssMinify: false,
@@ -22,6 +25,12 @@ const clientConfig = defineConfig({
 });
 
 const serverConfig = defineConfig({
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "app/"),
+		},
+		builtins: [/^node:/],
+	},
 	plugins: [
 		honox({
 			entry,
@@ -31,7 +40,6 @@ const serverConfig = defineConfig({
 			client: { input },
 		}),
 		tailwindcss({ optimize: { minify: false } }),
-		tsconfigPaths(),
 		ssg({ entry }),
 	],
 	build: {
