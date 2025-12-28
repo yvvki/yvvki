@@ -32,7 +32,7 @@ export default jsxRenderer(({ children }, c) => {
 			</head>
 			<body
 				class={twJoin(
-					"py-1 px-10 sm:ps-20 sm:pe-0 sm:w-160",
+					"pt-1 px-5 sm:ps-20 sm:pe-0 sm:w-160",
 					"bg-[#fce] text-[#312]",
 					"leading-none",
 					"flex flex-row",

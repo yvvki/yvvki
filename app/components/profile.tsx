@@ -31,10 +31,16 @@ export function Description({ class: className }: { class?: string }) {
 				<b>{raw("INFP-T • 7w8 sx/sp")}</b>
 			</p>
 			<p>
-				<span class="font-emoji">
-					<span title="Indonesian femboy">{raw("🇮🇩🏳️‍⚧️")}</span>{" "}
-					<span title="Kodocon">{raw("🎒🍼")}</span>{" "}
-					<span title="Proshipper">{raw("🌈🍖")}</span>
+				<span>
+					<span class="font-emoji" title="Femboi">
+						{raw("🇮🇩🏳️‍⚧️")}
+					</span>{" "}
+					<span class="font-emoji" title="Kodocon">
+						{raw("🎒🍼")}
+					</span>{" "}
+					<span class="font-emoji" title="Proshipper">
+						{raw("🌈🍖")}
+					</span>
 				</span>
 			</p>
 		</div>

@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bytesized&family=Micro+5&family=Jersey+10&display=swap");
-@import url("/styles/serenityos-emoji.css");
+@import url("https://fonts.googleapis.com/css2?family=Bytesized&family=Micro+5&family=Jersey+10&display=block");
+@import url("https://linusg.github.io/serenityos-emoji-font/SerenityOS-Emoji.css");
 @import url("/styles/ark-pixel-font-12px-proportional.css");
 
 @import "tailwindcss";
